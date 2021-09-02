@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  overflow: hidden;
+  font-size:16px;
+}
+@media screen and (min-width: 1440px) {
+  html{
+    font-size:18px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  html{
+    font-size:30px;
+  }
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background-color: #19a2ae;
+  overflow: hidden;
+  position: relative;
+}
+.circulo {
+  position: absolute;
+  width: 30.5625rem;
+  height: 30.5625rem;
+}
+.circulo--top {
+  top: -15rem;
+  left: -19.375rem;
+}
+.circulo--bottom {
+  bottom: -15rem;
+  right: -19.375rem;
+}
+@media screen and (min-width: 1440px) {
+  .circulo{
+    width: 61.25rem;
+    height: 61.25rem;
+  }
+  .circulo--top{
+    top: -32.5rem;
+    left: -18.75rem;
+  }
+  .circulo--bottom{
+    bottom: -41.875rem;
+    right: -15.625rem;
+  }
+}
+.card {
+  width: 18.75rem;
+  height: 21.875rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  z-index: 2;
+  background-color: #fff;
+}
+.card__pattern {
+  height: 40%;
+  width: 100%;
+  background: url(../images/bg-pattern-card.svg) no-repeat center;
+  background-size: cover;
+}
+.card__contentInfo {
+  width: 100%;
+  height: calc(100% - 40%);
+  position: relative;
+}
+.card__imgInfo {
+  width: 6.625rem;
+  height: 6.625rem;
+  position: absolute;
+  top: -3.3125rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 0.3125rem solid #fff;
+}
+.card__info {
+  width: 100%;
+  height: calc(100% - 40%);
+  padding-top: 3.125rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 0.0625rem solid rgba(106, 111, 129, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card__info--position{
+  width: 100%;
+  height: 40% ;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  }
+.card__infoTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #000;
+}
+.card__infoTitle--line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card__infoSubTitle {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+.card__infoSubTitle--subTitel {
+  font-size: 1.3rem;
+  margin-left: 0.375rem;
+}
+.card__infoSubTitle--subP {
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;  
+}
+.card__infoSubTitle--subInfo{
+  margin-top:0.375rem;
+  font-size: 0.6rem;
+}
