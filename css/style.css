@@ -5,16 +5,16 @@
 }
 html {
   overflow: hidden;
-  font-size:16px;
+  font-size: 16px;
 }
 @media screen and (min-width: 1440px) {
-  html{
-    font-size:18px;
+  html {
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 2560px) {
-  html{
-    font-size:30px;
+  html {
+    font-size: 30px;
   }
 }
 body {
@@ -42,15 +42,15 @@ body {
   right: -19.375rem;
 }
 @media screen and (min-width: 1440px) {
-  .circulo{
+  .circulo {
     width: 61.25rem;
     height: 61.25rem;
   }
-  .circulo--top{
+  .circulo--top {
     top: -32.5rem;
     left: -18.75rem;
   }
-  .circulo--bottom{
+  .circulo--bottom {
     bottom: -41.875rem;
     right: -15.625rem;
   }
@@ -96,19 +96,19 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.card__info--position{
+.card__info--position {
   width: 100%;
-  height: 40% ;
+  height: 40%;
   flex-direction: row;
   justify-content: space-around;
   padding: 0;
-  }
+}
 .card__infoTitle {
   font-size: 1.3rem;
   font-weight: 700;
   color: #000;
 }
-.card__infoTitle--line{
+.card__infoTitle--line {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,10 +124,30 @@ body {
   margin-left: 0.375rem;
 }
 .card__infoSubTitle--subP {
-margin-top: 0.5rem;
-margin-bottom: 0.5rem;  
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-.card__infoSubTitle--subInfo{
-  margin-top:0.375rem;
+.card__infoSubTitle--subInfo {
+  margin-top: 0.375rem;
   font-size: 0.6rem;
+}
+/* footer */
+.footer {
+  padding: 0.625rem;
+  position: absolute;
+  bottom: 0;
+  font-family: sans-serif;
+}
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #000;
+}
+.attribution__link {
+  font-weight: bold;
+  color: hsl(228, 45%, 44%);
+}
+.attribution__link--name {
+  text-decoration: none;
+  color: #333;
 }
